@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenangan Kelas VI - SD Katolik Wijana Sejati</title>
+    <style>
+        /* --- GAYA VINTAGE & UMUM --- */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --bg-color: #f4e4bc;
+            --text-color: #3e2723;
+            --accent-color: #8d6e63;
+            --border-color: #5d4037;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%238d6e63' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            font-family: 'Playfair Display', serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff8dc;
+            padding: 40px;
+            border: 2px solid var(--border-color);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        /* Ornamen Sudut */
+        .corner {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+        }
+        .corner-tl { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+        .corner-tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+        .corner-br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            font-size: 2.2em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- PESAN DARI KAMI --- */
+        . pesan-dari-kami {
+            background: rgba(139, 69, 19, 0.1);
+            border: 1px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* --- AYAT ALKITAB --- */
+        .bible-verse {
+            background: rgba(139, 69, 19, 0.15);
+            border-left: 4px solid var(--border-color);
+            border-right: 4px solid var(--border-color);
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .verse-ref {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        /* --- JUDUL KENANGAN --- */
+        .judul-kenangan {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            font-size: 1.8em;
+            margin: 30px 0 20px 0;
+            color: var(--border-color);
+        }
+
+        .sub-judul {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+        }
+
+        /* --- KARTU FOTO --- */
+        .card {
+            background: #fff;
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-family: 'Cinzel', serif;
+        }
+
+        /* --- AREA UPLOAD FOTO --- */
+        .photo-frame {
+            width: 100%;
+            height: 280px;
+            background: #f9f9f9;
+            border: 3px dashed var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .photo-frame:hover {
+            background: #f0f0f0;
+            border-color: var(--border-color);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .photo-frame .placeholder {
+            text-align: center;
+            color: #888;
+            padding: 10px;
+        }
+
+        .photo-frame .placeholder span {
+            display: block;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 80px;
+            background: #fafafa;
+            border: 1px solid var(--accent-color);
+            padding: 12px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1em;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid var(--accent-color);
+            font-style: italic;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* --- DEKORASI --- */
+        .dekorasi {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Ornamen Sudut -->
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <!-- HEADER -->
+    <h1>💒 Kenangan Kelas VI 💒</h1>
+    <p style="text-align: center; font-size: 1.1em;">SD Katolik Wijana Sejati Kota Mojokerto</p>
+    <p style="text-align: center; color: #666;">Tahun Ajaran 2024/2025</p>
+
+    <!-- PESAN DARI KAMI -->
+    <div class=" pesan-dari-kami">
+        <p>"Teman-teman, saya membuat website ini untuk mengenang kenangan kita semua. Kita pernah bercanda dan agak nakal hehe. Kita juga sering diberi tugas terus kita mengeluh. Kita sudah melewati semua ini, ujian, masalah, dan lain-lain. Waktunya sekarang kita berpisah, terimaksih teman-teman."</p>
+    </div>
+
+    <!-- DEKORASI -->
+    <div class="dekorasi">✦ ✦ ✦</div>
+
+    <!-- AYAT ALKITAB -->
+    <div class="bible-verse">
+        "Tidak ada yang lebih besar dari pada kasih ini, yaitu bahwa seseorang memberikan nyawanya bagi sahabat-sahabatnya."
+        <span class="verse-ref">- Yohanes 15:13 -</span>
+    </div>
+
+    <!-- DEKORASI -->
+    <div class="dekorasi">✦ ✦ ✦</div>
+
+    <!-- JUDUL KENANGAN -->
+    <h2 class="judul-kenangan">📸 Kenangan Kita</h2>
+    <p class="sub-judul">"Kasih Kenangan Mu Disini"</p>
+
+    <!-- ==================== KOLOM KENANGAN ==================== -->
+    
+    <!-- Kenangan 1 -->
+    <div class="card">
+        <div class="card-title">Kenangan Pertama</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 1">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- Kenangan 2 -->
+    <div class="card">
+        <div class="card-title">Kenangan Kedua</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 2">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- Kenangan 3 -->
+    <div class="card">
+        <div class="card-title">Kenangan Ketiga</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 3">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- Kenangan 4 -->
+    <div class="card">
+        <div class="card-title">Kenangan Keempat</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 4">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- Kenangan 5 -->
+    <div class="card">
+        <div class="card-title">Kenangan Kelima</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 5">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- Kenangan 6 -->
+    <div class="card">
+        <div class="card-title">Kenangan Keenam</div>
+        <div class="photo-frame" onclick="triggerUpload(this)">
+            <input type="file" accept="image/*" onchange="previewImage(event, this)">
+            <div class="placeholder">
+                <span>📷</span>
+                Klik untuk Tambah Foto
+            </div>
+            <img alt="Kenangan 6">
+        </div>
+        <textarea placeholder="Tuliskan kenanganmu di sini..."></textarea>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>"Terima kasih untuk semua kenangan yang tak terlupakan."</p>
+        <p style="font-size: 1.2em; margin-top: 15px;">❤️ Salam Perpisahan ❤️</p>
+        <p style="font-size: 0.9em; color: #888; margin-top: 15px;">Created with Love - Kelas VI SD Katolik Wijana Sejati</p>
+    </footer>
+
+</div>
+
+<script>
+    // Fungsi untuk membuka dialog pilih file
+    function triggerUpload(element) {
+        const input = element.querySelector('input[type="file"]');
+        input.click();
+    }
+
+    // Fungsi untuk menampilkan foto yang dipilih
+    function previewImage(event, element) {
+        const input = event.target;
+        const frame = input.parentElement;
+        const img = frame.querySelector('img');
+        const placeholder = frame.querySelector('.placeholder');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                img.src = e.target.result;
+                img.style.display = 'block';
+                placeholder.style.display = 'none';
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+</body>
+</html>
